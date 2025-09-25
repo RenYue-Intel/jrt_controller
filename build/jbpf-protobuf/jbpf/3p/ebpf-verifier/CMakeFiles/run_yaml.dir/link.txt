@@ -1,0 +1,1 @@
+/usr/bin/c++ -std=c++17 -O3 -DNDEBUG CMakeFiles/run_yaml.dir/src/main/run_yaml.cpp.o -o /jrtc/run_yaml  libebpfverifier.a -lyaml-cpp 

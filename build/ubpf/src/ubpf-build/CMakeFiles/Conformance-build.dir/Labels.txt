@@ -1,0 +1,11 @@
+# Target labels
+ Conformance
+# Source files and their labels
+/jrtc/build/ubpf/src/ubpf-build/CMakeFiles/Conformance-build
+/jrtc/build/ubpf/src/ubpf-build/CMakeFiles/Conformance-build.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-build.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-configure.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-patch.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-update.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-download.rule
+/jrtc/build/ubpf/src/ubpf-build/Conformance-prefix/src/Conformance-stamp/Conformance-mkdir.rule

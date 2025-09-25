@@ -90,10 +90,16 @@ main()
     jbpf_register_thread();
 
     struct packet p = {1, 2};
+    //int iteration_count = 0;
+
+    printf("Starting O-RAN LOOP OPTIMIZED agent - targeting single-digit microseconds...\n");
 
     while (1) {
+        // O-RAN PATH: Single hook call per iteration for consistent timing
         hook_test1(&p, 1);
-        usleep(1000000);
+        
+        // ZERO artificial delays - let O-RAN data flow at natural speed
+        // The 0.5ms TTI timing in data_generator provides realistic pacing
     }
 
     jbpf_stop();

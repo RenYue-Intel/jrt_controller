@@ -1,0 +1,1 @@
+cmd='/jrtc/jbpf-protobuf/jbpf/3p/ck/configure;--prefix=/jrtc/build/libck-jbpf'

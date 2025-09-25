@@ -1,0 +1,2 @@
+/usr/bin/ar qc /jrtc/out/lib/libjrtc_router.a CMakeFiles/jrtc_router.dir/jrtc_router.c.o CMakeFiles/jrtc_router.dir/__/controller/jrtc_config.c.o
+/usr/bin/ranlib /jrtc/out/lib/libjrtc_router.a

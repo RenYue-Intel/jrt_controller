@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../tools/schemas/jrtc-ctl.schema.json
+
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
+name: FirstExample
+
+jbpf:
+  device:
+    - id: 1
+      port: 8080
+
+  codelet_set:
+    - device: 1
+      config: ${JRTC_PATH}/sample_apps/jbpf_codelets/data_generator/codeletset.yaml
+
+    - device: 1
+      config: ${JRTC_PATH}/sample_apps/jbpf_codelets/simple_input/codeletset.yaml

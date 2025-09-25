@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -std=gnu11 -march=native -Wall -Werror -O3 -shared -Wl,-soname,libjrtc_router_stream_id.so -o /jrtc/out/lib/libjrtc_router_stream_id.so CMakeFiles/jrtc_router_stream_id_static.dir/jrtc_router_stream_id.c.o CMakeFiles/jrtc_router_stream_id_static.dir/jrtc_router_stream_id_int.c.o  /jrtc/out/lib/libjrtc_logger.a 

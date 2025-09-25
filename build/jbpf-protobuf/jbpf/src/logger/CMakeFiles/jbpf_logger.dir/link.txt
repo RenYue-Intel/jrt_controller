@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjbpf_logger.a CMakeFiles/jbpf_logger.dir/jbpf_logging.c.o
+/usr/bin/ranlib libjbpf_logger.a

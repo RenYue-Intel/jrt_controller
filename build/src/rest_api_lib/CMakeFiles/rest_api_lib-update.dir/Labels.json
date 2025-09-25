@@ -1,0 +1,28 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/jrtc/build/src/rest_api_lib/CMakeFiles/rest_api_lib-update"
+		},
+		{
+			"file" : "/jrtc/build/src/rest_api_lib/CMakeFiles/rest_api_lib-update.rule"
+		},
+		{
+			"file" : "/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-update.rule"
+		},
+		{
+			"file" : "/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-download.rule"
+		},
+		{
+			"file" : "/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"rest_api_lib"
+		],
+		"name" : "rest_api_lib-update"
+	}
+}

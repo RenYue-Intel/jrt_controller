@@ -1,0 +1,2 @@
+/usr/bin/ar qc /jrtc/out/lib/libjbpf_io.a CMakeFiles/jbpf_io.dir/jbpf_io.c.o CMakeFiles/jbpf_io.dir/jbpf_io_ipc.c.o CMakeFiles/jbpf_io.dir/jbpf_io_utils.c.o CMakeFiles/jbpf_io.dir/jbpf_io_queue.c.o CMakeFiles/jbpf_io.dir/jbpf_io_thread_mgmt.c.o CMakeFiles/jbpf_io.dir/jbpf_io_channel.c.o CMakeFiles/jbpf_io.dir/jbpf_io_local.c.o ../mem_mgmt/CMakeFiles/jbpf_mem_mgmt.dir/jbpf_mem_mgmt.c.o ../mem_mgmt/CMakeFiles/jbpf_mem_mgmt.dir/jbpf_mempool.c.o ../logger/CMakeFiles/jbpf_logger.dir/jbpf_logging.c.o
+/usr/bin/ranlib /jrtc/out/lib/libjbpf_io.a

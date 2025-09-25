@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -std=gnu11 -march=native -Wall -Werror -O3 -shared -Wl,-soname,libjrtc_north_io.so -o /jrtc/out/lib/libjrtc_north_io.so CMakeFiles/jrtc_north_io.dir/jrtc_north_io_app.c.o  /jrtc/out/lib/libjbpf_io.a ../../jbpf-protobuf/jbpf/3p/mimalloc/libmimalloc.a /usr/lib/x86_64-linux-gnu/libpthread.a /usr/lib/x86_64-linux-gnu/librt.a ../../libck-jbpf/lib/libck.a -ldl 
