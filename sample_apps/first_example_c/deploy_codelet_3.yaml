@@ -5,12 +5,6 @@
 
 name: FirstExample
 
-app:
-  - name: app1
-    path: ${JRTC_PATH}/sample_apps/first_example_c/first_example.py
-    type: python
-    port: 3001
-
 jbpf:
   device:
     - id: 1
@@ -18,5 +12,5 @@ jbpf:
 
   codelet_set:
     - device: 1
-      config: ${JRTC_PATH}/sample_apps/jbpf_codelets/data_generator/codeletset.yaml
+      config: ${JRTC_PATH}/sample_apps/jbpf_codelets/data_generator_3/codeletset.yaml
 

@@ -8,6 +8,7 @@
 
 #include "generated_data.h" // relevant header for generated data
 #include "generated_data_2.h"
+#include "generated_data_3.h"
 #include "simple_input.h"   // relevant header for simple input
 
 #include "jrtc_app.h" // Include the header for JrtcCppApp
@@ -32,6 +33,7 @@ enum StreamIndex
 {
     GENERATOR_OUT_SIDX = 0,
     GENERATOR_OUT_2_SIDX,
+    GENERATOR_OUT_3_SIDX,
     SIMPLE_INPUT_IN_SIDX
 };
 
@@ -98,7 +100,30 @@ app_handler(bool timeout, int stream_idx, jrtc_router_data_entry_t* data_entry, 
 
             printf("received SRS info: nRi[%u] nTANanos[%d] nSigPwr[%d] nNiPwr[%d] | delay[%lu]\n", nRi, nTANanos, nSigPwr, nNiPwr, delay);
     }
+    else if (stream_idx == GENERATOR_OUT_3_SIDX) {
+        state->received_counter++;
+        example_3_msg* ran_srsce_recv = (example_3_msg*)data_entry->data;
+        struct timespec curr_time;
 
+        clock_gettime(CLOCK_REALTIME, &curr_time);
+        uint64_t jrtc_receive_time_ns = curr_time.tv_nsec + curr_time.tv_sec * 1.0e9;
+        uint64_t delay = jrtc_receive_time_ns - ran_srsce_recv->timestamp_ns;
+        uint16_t cell_id = ran_srsce_recv->cell_id;
+        uint16_t ant_count = ran_srsce_recv->ant_count;
+        uint32_t block_count = ran_srsce_recv->block_count;
+        uint32_t payload_len = ran_srsce_recv->payload_len;
+        printf("received SRS CE header and payload: cell_id[%u] ant_count[%u] block_count[%u] payload_len[%u]| delay[%lu]\n", cell_id, ant_count, block_count, payload_len, delay);
+        if (payload_len > 0U) 
+        {
+            uint32_t bytes_to_dump = payload_len < 16U ? payload_len : 16U;
+            printf("payload[0:%u):", bytes_to_dump);
+            for (uint32_t i = 0U; i < bytes_to_dump; ++i) 
+            {
+                printf(" %02X", ran_srsce_recv->payload[i]);
+            }
+            printf("\n");
+        }
+    }
 }
 
 // ##########################################################################
@@ -134,21 +159,17 @@ jrtc_start_app(void* args)
                                             "ringbuf_2"},
                                             true, // is_rx
                                             NULL
-                                            /* &(JrtcAppChannelCfg_t){  // CREATE DIRECT INPUT CHANNEL
-                                            //    .is_output = false,   // Input channel
-                                            //    .num_elems = 32768,   // Large buffer for O-RAN high throughput
-                                            //    .elem_size = sizeof(example_msg)
-                                            } */
                                        },
-                                       // SIMPLE_INPUT_IN_SIDX
+                                       // GENERATOR_OUT_3_SIDX
                                        {
-                                           {JRTC_ROUTER_REQ_DEST_NONE,
-                                            jbpf_agent_device_id,
-                                            "FirstExample://jbpf_agent/simple_input_codeletset/codelet",
-                                            "input_map"},
-                                           false, // is_rx
-                                           NULL   // No AppChannelCfg
-                                       }};
+                                           {JRTC_ROUTER_REQ_DEST_ANY  /*JRTC_ROUTER_REQ_DEST_NONE */,
+                                            JRTC_ROUTER_REQ_DEVICE_ID_ANY /*jbpf_agent_device_id */ ,
+                                            "FirstExample://jbpf_agent/data_generator_codeletset_3/codelet_3",
+                                            "srs_ce_ringbuf"},
+                                            true, // is_rx
+                                            NULL
+                                       },
+                                      };
 
     const JrtcAppCfg_t app_cfg = {
         "FirstExample",                       // context

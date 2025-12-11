@@ -1,0 +1,12 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
+codeletset_id: data_generator_codeletset_3
+codelet_descriptor:
+  - codelet_name: codelet_3
+    codelet_path: ${JRTC_PATH}/sample_apps/jbpf_codelets/data_generator_3/data_generator_codelet_3.o
+    hook_name: srs_ce
+    priority: 2
+    runtime_threshold: 500000
+    out_io_channel:
+      - name: srs_ce_ringbuf

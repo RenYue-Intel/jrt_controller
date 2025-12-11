@@ -8,7 +8,7 @@ LIBRARY_NAME = app1
 all: $(LIBRARY_NAME)
 
 # Define header paths
-INCLUDE_DIRS = -I$(JRTC_OUT_DIR)/inc -I$(NANO_PB) -I../jbpf_codelets/data_generator -I../jbpf_codelets/data_generator_2 -I../jbpf_codelets/simple_input
+INCLUDE_DIRS = -I$(JRTC_OUT_DIR)/inc -I$(NANO_PB) -I../jbpf_codelets/data_generator -I../jbpf_codelets/data_generator_2 -I../jbpf_codelets/data_generator_3 -I../jbpf_codelets/simple_input
 
 # Define compiler flags
 CFLAGS = -Wall -fPIC $(INCLUDE_DIRS) -fno-gnu-unique -g -DPB_FIELD_32BIT=1
