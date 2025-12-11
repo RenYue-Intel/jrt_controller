@@ -1,8 +1,0 @@
-# Target labels
- rest_api_lib
-# Source files and their labels
-/jrtc/build/src/rest_api_lib/CMakeFiles/rest_api_lib-update
-/jrtc/build/src/rest_api_lib/CMakeFiles/rest_api_lib-update.rule
-/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-update.rule
-/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-download.rule
-/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib-stamp/rest_api_lib-mkdir.rule

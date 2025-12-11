@@ -1,2 +1,0 @@
-/usr/bin/ar qc /jrtc/out/lib/libjrtc_logger.a CMakeFiles/jrtc_logger.dir/jrtc_logging.c.o
-/usr/bin/ranlib /jrtc/out/lib/libjrtc_logger.a

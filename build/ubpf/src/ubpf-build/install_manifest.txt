@@ -1,5 +1,0 @@
-/jrtc/out/lib/libubpf.a
-/jrtc/out/inc/ubpf.h
-/jrtc/out/inc/ubpf_config.h
-/jrtc/out/lib/cmake/ubpf/ubpfConfig.cmake
-/jrtc/out/lib/cmake/ubpf/ubpfConfig-noconfig.cmake

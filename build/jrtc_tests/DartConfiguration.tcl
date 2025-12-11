@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /jrtc/jrtc_tests
-BuildDirectory: /jrtc/build/jrtc_tests
+SourceDirectory: /home/runner/work/jrt_controller/jrt_controller/jrtc_tests
+BuildDirectory: /home/runner/work/jrt_controller/jrt_controller/build/jrtc_tests
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: 60870957aeb1
+Site: runnervm6qbrg
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/jrtc/jrtc_tests"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/bin/cmake" "/home/runner/work/jrt_controller/jrt_controller/jrtc_tests"
+MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -94,6 +94,9 @@ TimeOut: 1500
 # During parallel testing CTest will not start a new test if doing
 # so would cause the system load to exceed this value.
 TestLoad: 
+
+TLSVerify: 
+TLSVersion: 
 
 UseLaunchers: 
 CurlOptions: 

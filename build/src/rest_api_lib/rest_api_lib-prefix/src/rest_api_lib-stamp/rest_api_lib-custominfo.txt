@@ -1,9 +1,0 @@
-# This is a generated file and its contents are an internal implementation detail.
-# The download step will be re-executed if anything in this file changes.
-# No other meaning or use of this file is supported.
-
-method=custom
-command=
-source_dir=/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src/rest_api_lib
-work_dir=/jrtc/build/src/rest_api_lib/rest_api_lib-prefix/src
-

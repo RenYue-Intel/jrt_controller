@@ -1,1 +1,0 @@
-/usr/bin/c++ -std=c++17 -O3 -DNDEBUG CMakeFiles/check.dir/src/main/check.cpp.o CMakeFiles/check.dir/src/main/linux_verifier.cpp.o -o /jrtc/check  libebpfverifier.a -lyaml-cpp 

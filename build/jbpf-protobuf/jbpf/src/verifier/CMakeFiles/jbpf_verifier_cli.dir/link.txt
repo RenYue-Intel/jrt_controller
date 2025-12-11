@@ -1,1 +1,0 @@
-/usr/bin/c++ -std=c++17 -O3 -DNDEBUG CMakeFiles/jbpf_verifier_cli.dir/jbpf_verifier_cli.cpp.o -o /jrtc/out/bin/jbpf_verifier_cli  /jrtc/out/lib/libjbpf_verifier.a 

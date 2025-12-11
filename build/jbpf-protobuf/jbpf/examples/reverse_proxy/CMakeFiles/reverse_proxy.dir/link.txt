@@ -1,2 +1,0 @@
-/usr/bin/ar qc /jrtc/jbpf-protobuf/jbpf/examples/reverse_proxy/libreverse_proxy.a CMakeFiles/reverse_proxy.dir/parser.cpp.o CMakeFiles/reverse_proxy.dir/listener.cpp.o CMakeFiles/reverse_proxy.dir/__/__/tools/lcm_cli/stream_id.cpp.o
-/usr/bin/ranlib /jrtc/jbpf-protobuf/jbpf/examples/reverse_proxy/libreverse_proxy.a

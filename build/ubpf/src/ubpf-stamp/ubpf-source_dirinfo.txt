@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/jrtc/jbpf-protobuf/jbpf/3p/ubpf
+source_dir=/home/runner/work/jrt_controller/jrt_controller/jbpf-protobuf/jbpf/3p/ubpf
 work_dir=
 

@@ -1,1 +1,1 @@
-cmd='/usr/bin/cmake;-DUBPF_ENABLE_INSTALL=1;-DCMAKE_INSTALL_INCLUDEDIR=/jrtc/out/inc;-DCMAKE_INSTALL_LIBDIR=/jrtc/out/lib;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
+cmd='/usr/local/bin/cmake;-DUBPF_ENABLE_INSTALL=1;-DCMAKE_INSTALL_INCLUDEDIR=/home/runner/work/jrt_controller/jrt_controller/out/inc;-DCMAKE_INSTALL_LIBDIR=/home/runner/work/jrt_controller/jrt_controller/out/lib;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'

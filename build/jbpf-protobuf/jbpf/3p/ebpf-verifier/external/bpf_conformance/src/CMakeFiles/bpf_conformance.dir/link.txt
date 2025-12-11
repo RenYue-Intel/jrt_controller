@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbpf_conformance.a CMakeFiles/bpf_conformance.dir/bpf_assembler.cc.o CMakeFiles/bpf_conformance.dir/bpf_test_parser.cc.o CMakeFiles/bpf_conformance.dir/bpf_conformance.cc.o
-/usr/bin/ranlib libbpf_conformance.a

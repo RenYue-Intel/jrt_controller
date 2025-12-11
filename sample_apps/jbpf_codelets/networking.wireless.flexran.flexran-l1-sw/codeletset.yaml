@@ -1,0 +1,12 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
+codeletset_id: srs_ce_codeletset
+codelet_descriptor:
+  - codelet_name: srs_ce_codelet
+    codelet_path: ${JRTC_PATH}/sample_apps/jbpf_codelets/networking.wireless.flexran.flexran-l1-sw/srs_ce_codelet.o
+    hook_name: srs_ce_hook
+    priority: 2
+    runtime_threshold: 50000
+    out_io_channel:
+      - name: ringbuf_srs_ce

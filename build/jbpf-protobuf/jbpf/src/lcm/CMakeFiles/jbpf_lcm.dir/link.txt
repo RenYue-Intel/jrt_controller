@@ -1,2 +1,0 @@
-/usr/bin/ar qc /jrtc/out/lib/libjbpf_lcm.a CMakeFiles/jbpf_lcm.dir/jbpf_lcm_ipc.c.o
-/usr/bin/ranlib /jrtc/out/lib/libjbpf_lcm.a
